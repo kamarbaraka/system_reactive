@@ -1,0 +1,20 @@
+spring:
+  threads:
+    virtual:
+      enabled: false
+  application:
+    name: system_reactive
+  main:
+    web-application-type: reactive
+
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/mpi_ecom_db?currentSchema=reactive_app
+    username: postgres
+    password: Samsroot#postgresql
+  security:
+    user:
+      name: kamar
+      password: kamar
+server:
+  port: 9092
+
